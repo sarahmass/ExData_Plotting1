@@ -63,7 +63,7 @@ with(data, plot(DateTime,Voltage,
                 xlab = "datetime"))
 
 ## row 2, col 2: Plot global reactive power for each day
-with(data, plot(DateTime, Global_reactive_power, , 
+with(data, plot(DateTime, Global_reactive_power, 
                 type = "l", 
                 xlab = "datetime"))
 
