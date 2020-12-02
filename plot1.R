@@ -28,9 +28,12 @@ data$DateTime = dmy_hms(data$DateTime)
 
 ## launch a png graphics device
 png(file = 'plot1.png')
-with(data, hist(Global_active_power,col="red", main = "Global Active Power", 
-                ylab="Frequency", xlab = "Global Active Power (kilowatts)")) 
-                #margin=c(4,4,2,1), xlim = 0:6)
+with(data, hist(Global_active_power,
+                col="red", 
+                main = "Global Active Power", 
+                ylab="Frequency", 
+                xlab = "Global Active Power (kilowatts)")) 
+                
 
 ## close graphics device
 dev.off()
